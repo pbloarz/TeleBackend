@@ -1,24 +1,14 @@
 package com.pbloarz.demo.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import com.pbloarz.demo.model.Client;
-import com.pbloarz.demo.model.Usuario;
 import com.pbloarz.demo.repository.PlanDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.pbloarz.demo.model.Plan;
-import com.pbloarz.demo.repository.UsuarioDao;
+
 import com.pbloarz.demo.response.RespuestaPersonalizada;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,10 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class PlanService{
     @Autowired
     private PlanDao planDao;
-    @Autowired
-    private UsuarioDao usuarioDao;
-    @Autowired
-    private BCryptPasswordEncoder encoder;
+   
 
     public ResponseEntity<Object> create(Plan usuario){
         ResponseEntity<Object> respuesta;
