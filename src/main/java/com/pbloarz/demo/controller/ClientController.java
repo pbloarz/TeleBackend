@@ -1,16 +1,11 @@
 package com.pbloarz.demo.controller;
 
 import com.pbloarz.demo.model.Client;
-import com.pbloarz.demo.model.Usuario;
-import com.pbloarz.demo.response.RespuestaPersonalizada;
 import com.pbloarz.demo.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Optional;
 
 
 @RestController
