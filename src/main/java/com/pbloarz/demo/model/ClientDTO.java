@@ -1,4 +1,6 @@
-public class ClientDTO {
+package com.pbloarz.demo.model;
+
+ class ClientDTO {
 
 
     private int id;

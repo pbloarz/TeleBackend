@@ -18,7 +18,7 @@ public class ClientService {
     private ClientDao clientDao;
 
 
-    public ResponseEntity<Object> create(@RequestBody ClientDTO client){
+    public ResponseEntity<Object> create(@RequestBody Client client){
         ResponseEntity<Object> respuesta;
         try {
             clientDao.save(client);
